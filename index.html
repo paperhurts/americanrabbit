@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)file:///C:/Users/paper/Downloads/americanrabbit-landing_1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dedicated to ethical rabbit breeding, transparent governance, and doing things the right way.">
+<title>American Rabbit — Ethics in Rabbit Breeding</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./index_files/css2" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf8f5;
+    --bg-warm: #f5f0e8;
+    --text: #2a2520;
+    --text-soft: #5a5550;
+    --text-faint: #8a8580;
+    --accent: #6b7c5e;
+    --accent-deep: #4a5a3e;
+    --accent-light: #d4dece;
+    --gold: #b8945a;
+    --gold-light: #e8dcc8;
+    --border: #e0dbd4;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Source Sans 3', 'Georgia', serif;
+    min-height: 100vh;
+    line-height: 1.7;
+  }
+
+  /* Subtle paper texture */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.015'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+  .container {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Header */
+  header {
+    padding: 4rem 0 3rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .site-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: 2.6rem;
+    color: var(--text);
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .site-title span {
+    display: block;
+    font-size: 0.95rem;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-top: 0.75rem;
+  }
+
+  .sprig {
+    display: block;
+    margin: 1.5rem auto 0;
+    color: var(--accent);
+    font-size: 1.4rem;
+    letter-spacing: 0.5em;
+    opacity: 0.5;
+  }
+
+  /* Main */
+  main {
+    padding: 3rem 0;
+  }
+
+  .intro {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.35rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--text-soft);
+    text-align: center;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+  }
+
+  .section {
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-light);
+  }
+
+  .section p {
+    font-size: 1.05rem;
+    color: var(--text-soft);
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  .section p strong {
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  /* The principles - this is where the petty lives */
+  .principles {
+    background: var(--bg-warm);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 2.5rem;
+    margin: 3rem 0;
+  }
+
+  .principles-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--accent-deep);
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+  }
+
+  .principle {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: baseline;
+  }
+
+  .principle:last-child {
+    margin-bottom: 0;
+  }
+
+  .principle-num {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+    flex-shrink: 0;
+    width: 2rem;
+    text-align: center;
+  }
+
+  .principle-text {
+    font-size: 1.02rem;
+    color: var(--text-soft);
+    font-weight: 300;
+  }
+
+  .principle-text strong {
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  /* Quote block */
+  .quote-block {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    margin: 3rem 0;
+    position: relative;
+  }
+
+  .quote-block::before {
+    content: '\201C';
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 5rem;
+    color: var(--accent-light);
+    position: absolute;
+    top: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1;
+  }
+
+  .quote-text {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--text-soft);
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+  }
+
+  .quote-attr {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--text-faint);
+    margin-top: 1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* Redirect note */
+  .redirect-note {
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem 0;
+    border: 1px dashed var(--border);
+    border-radius: 3px;
+  }
+
+  .redirect-note p {
+    font-size: 0.95rem;
+    color: var(--text-faint);
+    font-weight: 300;
+  }
+
+  .redirect-note a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-light);
+    transition: all 0.3s;
+  }
+
+  .redirect-note a:hover {
+    color: var(--accent-deep);
+    border-bottom-color: var(--accent);
+  }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem 0 3rem;
+    text-align: center;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+    color: var(--text-faint);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+  }
+
+  .footer-text a {
+    color: var(--text-faint);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .footer-text a:hover {
+    color: var(--accent);
+  }
+
+  /* Animations */
+  @keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(15px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  header { animation: fadeUp 0.8s ease-out; }
+  .intro { animation: fadeUp 0.8s ease-out 0.2s both; }
+  .section { animation: fadeUp 0.8s ease-out 0.3s both; }
+  .principles { animation: fadeUp 0.8s ease-out 0.4s both; }
+  .quote-block { animation: fadeUp 0.8s ease-out 0.5s both; }
+
+  @media (max-width: 600px) {
+    .site-title { font-size: 2rem; }
+    .principles { padding: 1.5rem; }
+    header { padding: 3rem 0 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1 class="site-title">
+      American Rabbit
+      <span>Ethics in Breeding &amp; Governance</span>
+    </h1>
+    <div class="sprig">· · ·</div>
+  </header>
+
+  <main>
+    <p class="intro">
+      A resource dedicated to the belief that rabbit breeding organizations
+      should be held to the same ethical standards they expect of their members.
+    </p>
+
+    <div class="section">
+      <h2 class="section-title">Why This Site Exists</h2>
+      <p>
+        The American rabbit community deserves organizations that operate with
+        <strong>transparency, financial accountability, and good governance</strong>.
+        When clubs ask members to volunteer their time, skills, and creative work,
+        those contributions should be honored — not exploited.
+      </p>
+      <p>
+        When organizations send cease-and-desist notices for work they didn't create,
+        when financial records go unaudited, when asking ethical questions gets you
+        pushed out rather than answered — something has gone wrong.
+      </p>
+      <p>
+        This site exists because <strong>someone decided to ask questions</strong>,
+        and the answers were more interesting than anyone expected.
+      </p>
+    </div>
+
+    <div class="principles">
+      <h3 class="principles-title">Principles We Believe In</h3>
+
+      <div class="principle">
+        <span class="principle-num">1</span>
+        <p class="principle-text"><strong>Financial transparency.</strong> Members have a right to know how their dues and show fees are spent. Organizations that resist audits have something to hide.</p>
+      </div>
+
+      <div class="principle">
+        <span class="principle-num">2</span>
+        <p class="principle-text"><strong>Intellectual property rights.</strong> If a volunteer creates original work — a logo, a website, written content — the copyright belongs to the creator unless a written agreement says otherwise. This isn't opinion. It's federal law.</p>
+      </div>
+
+      <div class="principle">
+        <span class="principle-num">3</span>
+        <p class="principle-text"><strong>Good-faith governance.</strong> Board members serve the membership, not themselves. Retaliating against members who ask inconvenient questions is a sign of institutional failure.</p>
+      </div>
+
+      <div class="principle">
+        <span class="principle-num">4</span>
+        <p class="principle-text"><strong>Ethical breeding practices.</strong> The welfare of the animals always comes first. No politics, no ego, no exceptions.</p>
+      </div>
+
+      <div class="principle">
+        <span class="principle-num">5</span>
+        <p class="principle-text"><strong>Accountability.</strong> Organizations that handle money, maintain registries, or represent a breed to the public should welcome scrutiny — not punish it.</p>
+      </div>
+    </div>
+
+    <div class="quote-block">
+      <p class="quote-text">
+        The measure of an organization is not how it treats its loyalists,<br>
+        but how it responds to its questioners.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">For the Record</h2>
+      <p>
+        This domain — <strong>americanrabbit.org</strong> — is privately owned
+        and is not affiliated with any rabbit breeding club or national organization.
+        It was purchased on the open market because, remarkably, it was available.
+      </p>
+      <p>
+        If you were looking for a specific rabbit organization, you may want to check
+        your spelling carefully.
+      </p>
+    </div>
+
+    <div class="redirect-note">
+      <p>
+        Interested in quality American, Rex, and Dwarf Papillon breeding in Florida?<br>
+        Visit <a href="https://doebuckblues.com/">doebuckblues</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p class="footer-text">© 2026 americanrabbit.org — Privately owned. Ethically operated. Transparently funded.</p>
+  </footer>
+</div>
+
+
+
+</body></html>
